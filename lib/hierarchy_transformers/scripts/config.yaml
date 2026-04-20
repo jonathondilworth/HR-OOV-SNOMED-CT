@@ -1,0 +1,35 @@
+# DATASET DETAILS
+# dataset_path: "./data/hit_dataset_US_20140901_MINI_CPP"
+# dataset_path: "./data/hit_dataset_US_20140901_FULL"
+dataset_path: "./data/hit_dataset_INTERNATIONAL_20250901_MINI"
+# dataset_path: "./data/hit_dataset_INTERNATIONAL_20250901_FULL"
+
+dataset_name: "mixed"
+
+# RANDOM
+# dataset_name: "multi"
+
+# NEGATIVE TYPE (HARD, RANDOM)
+negative_type: "random"
+
+# NEGATIVE TYPE (HARD)
+# negative_type: "hard"
+
+# BASE MODEL (TRAINING)
+model_path: "sentence-transformers/all-MiniLM-L12-v2"
+
+# evaluation script expects a revision:
+# revision: None
+# EVALUATION MODEL PATH (EVAL):
+#model_path: "/home/jon/HOPE/experiments/HiT-all-MiniLM-L12-v2-hit_dataset_snomed_20250901_tax_inferred-mixed-random"
+
+# TRAINING CONFIG
+num_train_epochs: 4 # 2 # 4
+train_batch_size: 256
+eval_batch_size: 512
+learning_rate: 1e-5
+hit_loss: 
+  clustering_loss_weight: 1.0
+  clustering_loss_margin: 3.0
+  centripetal_loss_weight: 1.0
+  centripetal_loss_margin: 0.5
