@@ -18,6 +18,8 @@ Configurations for re-training models are available [here](./docs/retraining-mod
 
 See the included [libraries] for re-training procedures.
 
+These include [sentence-transformers](https://github.com/huggingface/sentence-transformers), [hierarchy transformers](https://github.com/KRR-Oxford/HierarchyTransformers), and [OnT](https://github.com/HuiYang1997/OnT).
+
 Models will be published to HF (shortly).
 
 ## Environment
